@@ -46,7 +46,7 @@ static int8_t saturateInt8(float f) {
   int q = (f >= 0) ? (int)std::ceil(f) : (int)std::floor(f);
 #elif 0
   // round
-  int q = (int)std::roundf(f);
+  int q = (int)roundf(f);
 #elif 0
   // trancate, (towards zero)
   int q = (f >= 0) ? (int)std::floor(f) : (int)std::ceil(f);
@@ -54,9 +54,9 @@ static int8_t saturateInt8(float f) {
   // from caffe_int8
   int q = (int)std::floor(f + 0.5);
 #else
-  // looks HW is different than std::round()
+  // looks HW is different than round()
   // we shall apply round only for input quant()
-  int q = (int)std::round(f);
+  int q = (int)round(f);
 #endif
   if (q > 127)
     q = 127;
@@ -98,7 +98,7 @@ static void QuantizeMultiplier(double double_multiplier, int32_t *quantized_mult
   }
 
   const double q = std::frexp(double_multiplier, shift);
-  auto q_fixed = static_cast<int64_t>(std::round(q * (1ll << 31)));
+  auto q_fixed = static_cast<int64_t>(round(q * (1ll << 31)));
 
   assert(q_fixed <= (1ll << 31));
   if (q_fixed == (1ll << 31)) {

@@ -100,28 +100,13 @@ struct disable_if_c<true, T> {};
 template <class Cond, class T = void>
 struct disable_if : public disable_if_c<Cond::value, T> {};
 
-template <typename T>
-T castTo(const std::string &item) {
-  std::istringstream sin(item);
-  T value;
-  sin >> value;
-  return value;
-}
-
-template <typename T>
-std::string toString(const T &item) {
-  std::ostringstream sout;
-  sout << item;
-  return sout.str();
-}
-
-void remove_space(std::string &str) {
+inline void remove_space(std::string &str) {
   str.erase(std::remove_if(str.begin(), str.end(),
                            [](unsigned char x) { return std::isspace(x); }),
             str.end());
 }
 
-void strip_brackets(std::string &str) {
+inline void strip_brackets(std::string &str) {
   auto first_bracket = str.find_first_of('[');
   if (first_bracket == std::string::npos) {
     std::ostringstream sout;
@@ -137,6 +122,89 @@ void strip_brackets(std::string &str) {
     throw std::runtime_error(sout.str());
   }
   str.erase(str.begin() + last_bracket);
+}
+
+template <typename T>
+T castTo(const std::string &item);
+
+template <typename T>
+std::ostream &operator<<(std::ostream &out, const std::vector<T> &v) {
+  out << "[";
+  for (unsigned long i = 0; i < v.size(); ++i) {
+    if (i > 0)
+      out << ", ";
+    out << v[i];
+  }
+  out << "]";
+
+  return out;
+}
+
+template <typename T>
+typename argparse::enable_if<argparse::is_standard_type<T>,
+                             std::istream &>::type
+operator>>(std::istream &in, std::vector<std::vector<T>> &v) {
+  using namespace argparse;
+  static const std::string delimiter = "]";
+  v.clear();
+
+  std::string str;
+  std::getline(in, str, '\n');
+
+  if (str.empty())
+    return in;
+  remove_space(str);
+  strip_brackets(str);
+
+  size_t pos = 0;
+  while ((pos = str.find(delimiter)) != std::string::npos) {
+    std::string substr = str.substr(0, pos + 1);
+    v.push_back(castTo<std::vector<T>>(substr));
+    str.erase(0, pos + delimiter.length());
+  }
+
+  return in;
+}
+
+template <typename T>
+typename argparse::enable_if<argparse::is_standard_type<T>,
+                             std::istream &>::type
+operator>>(std::istream &in, std::vector<T> &v) {
+  using namespace argparse;
+  v.clear();
+
+  std::string str;
+  std::getline(in, str, '\n');
+
+  if (str.empty())
+    return in;
+  remove_space(str);
+  strip_brackets(str);
+
+  std::istringstream sin(str);
+  while (sin.good()) {
+    std::string substr;
+    std::getline(sin, substr, ',');
+    if (!substr.empty())
+      v.push_back(castTo<T>(substr));
+  }
+
+  return in;
+}
+
+template <typename T>
+T castTo(const std::string &item) {
+  std::istringstream sin(item);
+  T value;
+  sin >> value;
+  return value;
+}
+
+template <typename T>
+std::string toString(const T &item) {
+  std::ostringstream sout;
+  sout << item;
+  return sout.str();
 }
 
 /*! @class ArgumentParser
@@ -533,70 +601,5 @@ public:
   }
 };
 } // namespace argparse
-
-template <typename T>
-std::ostream &operator<<(std::ostream &out, const std::vector<T> &v) {
-  out << "[";
-  for (unsigned long i = 0; i < v.size(); ++i) {
-    if (i > 0)
-      out << ", ";
-    out << v[i];
-  }
-  out << "]";
-
-  return out;
-}
-
-template <typename T>
-typename argparse::enable_if<argparse::is_standard_type<T>,
-                             std::istream &>::type
-operator>>(std::istream &in, std::vector<T> &v) {
-  using namespace argparse;
-  v.clear();
-
-  std::string str;
-  std::getline(in, str, '\n');
-
-  if (str.empty())
-    return in;
-  remove_space(str);
-  strip_brackets(str);
-
-  std::istringstream sin(str);
-  while (sin.good()) {
-    std::string substr;
-    std::getline(sin, substr, ',');
-    if (!substr.empty())
-      v.push_back(castTo<T>(substr));
-  }
-
-  return in;
-}
-
-template <typename T>
-typename argparse::enable_if<argparse::is_standard_type<T>,
-                             std::istream &>::type
-operator>>(std::istream &in, std::vector<std::vector<T>> &v) {
-  using namespace argparse;
-  static const std::string delimiter = "]";
-  v.clear();
-
-  std::string str;
-  std::getline(in, str, '\n');
-
-  if (str.empty())
-    return in;
-  remove_space(str);
-  strip_brackets(str);
-
-  size_t pos = 0;
-  while ((pos = str.find(delimiter)) != std::string::npos) {
-    std::string substr = str.substr(0, pos + 1);
-    v.push_back(castTo<std::vector<T>>(substr));
-    str.erase(0, pos + delimiter.length());
-  }
-
-  return in;
-}
 
 #endif

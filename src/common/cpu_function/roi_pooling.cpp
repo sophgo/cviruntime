@@ -50,10 +50,10 @@ void ROIPoolingFunc::run() {
     auto batch_top_data = top_data + _tops[0]->offset(b * num_rois);
     for (int n = 0; n < num_rois; ++n) {
       int roi_batch_ind = batch_rois[0];
-      int roi_start_w = std::round(batch_rois[1] * spatial_scale);
-      int roi_start_h = std::round(batch_rois[2] * spatial_scale);
-      int roi_end_w = std::round(batch_rois[3] * spatial_scale);
-      int roi_end_h = std::round(batch_rois[4] * spatial_scale);
+      int roi_start_w = round(batch_rois[1] * spatial_scale);
+      int roi_start_h = round(batch_rois[2] * spatial_scale);
+      int roi_end_w = round(batch_rois[3] * spatial_scale);
+      int roi_end_h = round(batch_rois[4] * spatial_scale);
       assert(roi_batch_ind < batch);
 
       int roi_height = std::max(roi_end_h - roi_start_h + 1, 1);

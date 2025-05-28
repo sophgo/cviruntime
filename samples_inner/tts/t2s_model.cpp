@@ -64,7 +64,7 @@ int32_t T2SEncoder::regulate_durations(int32_t text_sz) {
   bf16_t *ptr = (bf16_t *)CVI_NN_TensorPtr(&output_tensors[1]);
   int32_t total_duration = 0;
   for (int32_t i = 0; i < text_sz; i++) {
-    float d = (int32_t)std::round(FP32(ptr[i]));
+    float d = (int32_t)round(FP32(ptr[i]));
     durations[i] = (d <= 0) ? 1 : d;
     total_duration += durations[i];
   }

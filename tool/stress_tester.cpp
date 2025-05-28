@@ -147,7 +147,7 @@ void ModelTester::loadInputData(const std::string &input_npz) {
       auto src = arr.data<float>();
       auto qscale = CVI_NN_TensorQuantScale(&tensor);
       for (size_t i = 0; i < input_vec.size(); i++) {
-        int val = std::round(src[i] * qscale);
+        int val = round(src[i] * qscale);
         if (val > 127) {
           val = 127;
         } else if (val < -128) {

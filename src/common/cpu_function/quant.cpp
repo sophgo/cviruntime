@@ -9,7 +9,7 @@ namespace runtime {
 
 static inline signed char float2int8(float v)
 {
-    int int32 = std::round(v);
+    int int32 = round(v);
     if (int32 > 127) return 127;
     if (int32 < -128) return -128;
     return (signed char)int32;

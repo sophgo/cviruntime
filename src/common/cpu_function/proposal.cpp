@@ -35,8 +35,8 @@ static void _ratio_enum(std::vector<float> anchor, std::vector<float> anchor_rat
   for (int i = 0; i < ratio_num; i++)
   {
     float ratio = size / anchor_ratio[i];
-    int ws = int(std::round(std::sqrt(ratio)));
-    int hs = int(std::round(ws * anchor_ratio[i]));
+    int ws = int(round(std::sqrt(ratio)));
+    int hs = int(round(ws * anchor_ratio[i]));
     std::vector<float> ctrs_in;
     ctrs_in.push_back(ws);
     ctrs_in.push_back(hs);

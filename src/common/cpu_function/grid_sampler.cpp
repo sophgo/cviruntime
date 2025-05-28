@@ -157,8 +157,8 @@ void GridSamplerFunc::run() {
                 auto fy =
                     computeIndex(*grid, IH, padding_mode, align_corners);
                 ++grid;
-                int x = INT(std::round(fx));
-                int y = INT(std::round(fy));
+                int x = INT(round(fx));
+                int y = INT(round(fy));
                 const float *iiter = input + y * IW + x;
                 float *oiter = output;
                 for (int c = 0; c < C; ++c) {

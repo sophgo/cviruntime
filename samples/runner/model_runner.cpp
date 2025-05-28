@@ -166,7 +166,7 @@ static void saveResultToNpz(const std::string &name, CVI_TENSOR *tensors, int32_
 static void ConvertFp32ToInt8(float *src, int8_t *dst, int count,
                               float qscale, int zero_point = 0) {
   for (int i = 0; i < count; i++) {
-    int val = std::round((*src++) * qscale) + zero_point;
+    int val = round((*src++) * qscale) + zero_point;
     if (val > 127) {
       val = 127;
     } else if (val < -128) {
@@ -179,7 +179,7 @@ static void ConvertFp32ToInt8(float *src, int8_t *dst, int count,
 static void ConvertFp32ToUint8(float *src, uint8_t *dst, int count,
                                float qscale, int zero_point = 0) {
   for (int i = 0; i < count; i++) {
-    int val = std::round((*src++) * qscale) + zero_point;
+    int val = round((*src++) * qscale) + zero_point;
     if (val > 255) {
       val = 255;
     }

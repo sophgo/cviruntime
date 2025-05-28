@@ -57,7 +57,7 @@ static void *thread_entry(void *p) {
               std::normal_distribution<float> d{50, 50};
               int8_t *data = (int8_t *)CVI_NN_TensorPtr(tensor);
               for (int i = 0; i < (int)CVI_NN_TensorCount(tensor); i++) {
-                  float rand = std::round(d(gen));
+                  float rand = round(d(gen));
                   rand       = rand < 0 ? 0 : rand;
                   rand       = rand > 127 ? 127 : rand;
                   data[i]    = (int8_t)rand;

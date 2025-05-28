@@ -92,8 +92,8 @@ private:
       AnchorCenter ctr = mkcenter(base_anchor);
 
       float scale = (ctr.w * ctr.h) / ratios[i];
-      ctr.w = std::round(std::sqrt(scale));
-      ctr.h = std::round(ctr.w * ratios[i]);
+      ctr.w = round(std::sqrt(scale));
+      ctr.h = round(ctr.w * ratios[i]);
 
       AnchorBox anchor = mkanchor(ctr);
       anchors.push_back(anchor);
