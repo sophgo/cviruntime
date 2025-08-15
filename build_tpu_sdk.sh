@@ -11,6 +11,7 @@ echo "TOOLCHAIN_FILE_PATH=$TOOLCHAIN_FILE_PATH"
 TOOLCHAIN_AARCH64=$DIR/scripts/toolchain-aarch64-linux.cmake
 TOOLCHAIN_ARM=$DIR/scripts/toolchain-linux-gnueabihf.cmake
 TOOLCHAIN_UCLIBC=$DIR/scripts/toolchain-linux-uclibc.cmake
+TOOLCHAIN_MUSL=$DIR/scripts/toolchain-arm-linux-musleabihf.cmake
 TOOLCHAIN_RISCV64=$DIR/scripts/toolchain-riscv64-linux-x86_64.cmake
 TOOLCHAIN_RISCV64_MUSL=$DIR/scripts/toolchain-riscv64-linux-musl-x86_64.cmake
 
@@ -150,6 +151,7 @@ mkdir -p $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_FILE_PATH $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_AARCH64 $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_ARM $TPU_SDK_INSTALL_PATH/cmake
+cp $TOOLCHAIN_MUSL $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_UCLIBC $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_RISCV64 $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_RISCV64_MUSL $TPU_SDK_INSTALL_PATH/cmake

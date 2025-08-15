@@ -139,7 +139,7 @@ int main(int argc, const char **argv) {
     pthread_create(&thread[i], NULL, thread_entry, models[i]);
   }
 
-#ifdef __riscv_d
+#if defined (__riscv_d) || defined (ARM_MUSL) 
 #include <sched.h>
   sched_yield();
 #else

@@ -1,0 +1,267 @@
+[
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatbuffers.dir/src/idl_parser.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatbuffers.dir/src/idl_gen_text.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatbuffers.dir/src/reflection.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatbuffers.dir/src/util.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsamplebfbs.dir/src/idl_parser.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsamplebfbs.dir/src/idl_gen_text.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsamplebfbs.dir/src/reflection.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsamplebfbs.dir/src/util.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsamplebfbs.dir/samples/sample_bfbs.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/samples/sample_bfbs.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/samples/sample_bfbs.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_parser.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_text.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/reflection.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/util.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_cpp.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_cpp.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_cpp.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_csharp.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_csharp.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_csharp.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_dart.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_dart.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_dart.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_kotlin.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_kotlin.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_kotlin.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_go.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_go.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_go.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_java.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_java.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_java.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_js_ts.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_js_ts.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_js_ts.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_php.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_php.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_php.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_python.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_python.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_python.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_lobster.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_lobster.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_lobster.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_lua.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_lua.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_lua.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_rust.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_rust.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_rust.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_fbs.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_fbs.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_fbs.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_grpc.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_grpc.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_grpc.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_json_schema.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_json_schema.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_json_schema.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/idl_gen_swift.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_swift.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_swift.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/flatc.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/flatc.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/flatc.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/flatc_main.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/flatc_main.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/flatc_main.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/src/code_generators.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/code_generators.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/code_generators.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/cpp_generator.cc.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/cpp_generator.cc",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/cpp_generator.cc"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/go_generator.cc.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/go_generator.cc",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/go_generator.cc"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/java_generator.cc.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/java_generator.cc",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/java_generator.cc"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -Wold-style-cast -o CMakeFiles/flatc.dir/grpc/src/compiler/python_generator.cc.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/python_generator.cc",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc/src/compiler/python_generator.cc"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsampletext.dir/src/idl_parser.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsampletext.dir/src/idl_gen_text.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsampletext.dir/src/reflection.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsampletext.dir/src/util.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsampletext.dir/samples/sample_text.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/samples/sample_text.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/samples/sample_text.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flathash.dir/src/flathash.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/flathash.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/flathash.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flatsamplebinary.dir/samples/sample_binary.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/samples/sample_binary.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/samples/sample_binary.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/src/idl_parser.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_parser.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/src/idl_gen_text.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_text.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/src/reflection.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/reflection.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/src/util.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/util.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/src/idl_gen_fbs.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_fbs.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/idl_gen_fbs.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/tests/test.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/tests/test.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/tests/test.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/tests/test_assert.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/tests/test_assert.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/tests/test_assert.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/tests/test_builder.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/tests/test_builder.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/tests/test_builder.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/tests/native_type_test_impl.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/tests/native_type_test_impl.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/tests/native_type_test_impl.cpp"
+},
+{
+  "directory": "/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_flatbuffers_host",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1 -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE -I/data/forum_service/songpei/sync/v410_source/flatbuffers/include -I/data/forum_service/songpei/sync/v410_source/flatbuffers/grpc -Itests -Isamples  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -o CMakeFiles/flattests.dir/src/code_generators.cpp.o -c /data/forum_service/songpei/sync/v410_source/flatbuffers/src/code_generators.cpp",
+  "file": "/data/forum_service/songpei/sync/v410_source/flatbuffers/src/code_generators.cpp"
+}
+]

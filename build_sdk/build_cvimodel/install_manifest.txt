@@ -1,0 +1,2 @@
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/install_cvimodel_host/include/cvibuilder/cvimodel_generated.h
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/install_cvimodel_host/include/cvibuilder/parameter_generated.h

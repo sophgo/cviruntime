@@ -507,7 +507,7 @@ static void tpu_pmu_fwrite_des()
     }
 
     if (p_element[index].pmuEvent.type == TPU_PMUTYPE_TIU) {
-#ifdef __riscv
+#if defined (__riscv) || defined (ARM_MUSL) 
         sprintf(lineStr, "%u, %u, %u, %u, %u, %u, %u, %u, %u, %s\n",
 #else
         sprintf(lineStr, "%llu, %llu, %llu, %llu, %u, %u, %u, %u, %u, %s\n",
@@ -528,7 +528,7 @@ static void tpu_pmu_fwrite_des()
       dstAddr = ((uint64_t)(p_element[index].tdmaReg.dst_base_addr_high) << 32) |
                   (uint64_t)(p_element[index].tdmaReg.dst_base_addr_low);
 
-#ifdef __riscv
+#if defined (__riscv) || defined (ARM_MUSL) 
       sprintf(lineStr, "%u, %u, %u, %u, %u, %u, %u, %u, %u, %s, 0x%" PRIu64 ", 0x%" PRIu64 ", \
         %u, %u, %u, %u, %u, %u, %u, %u, %u, %u, %u, %u, %u, %u, %u, %u, %u\n",
 #else

@@ -1,0 +1,9 @@
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/install/strip.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/edit_cache.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/install/local.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/example1.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/cnpy-static.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/install.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/list_install_components.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/rebuild_cache.dir
+/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cnpy/CMakeFiles/cnpy.dir

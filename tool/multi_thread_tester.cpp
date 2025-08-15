@@ -103,7 +103,7 @@ int main(int argc, const char **argv) {
   for (int i = 0; i < thread_num; i++) {
     pthread_create(&thread[i], NULL, thread_entry, nullptr);
   }
-#ifdef __riscv_d
+#if defined (__riscv_d) || defined (ARM_MUSL) 
 #include <sched.h>
   sched_yield();
 #else

@@ -11,6 +11,7 @@
 #include <runtime/stream.hpp>
 
 #if defined(__aarch64__) || defined(__arm__) || (__GNUC__ < 6)
+#ifndef ARM_MUSL
 #include <sys/syscall.h>
 #include <fcntl.h>
 
@@ -26,6 +27,7 @@
 static inline int memfd_create(const char *name, unsigned int flags) {
   return syscall(SYS_memfd_create, name, flags);
 }
+#endif
 #endif
 
 namespace cvi {
