@@ -1,7 +1,0 @@
-/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cvimodel/CMakeFiles/install/strip.dir
-/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cvimodel/CMakeFiles/install/local.dir
-/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cvimodel/CMakeFiles/install.dir
-/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cvimodel/CMakeFiles/list_install_components.dir
-/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cvimodel/CMakeFiles/rebuild_cache.dir
-/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cvimodel/CMakeFiles/edit_cache.dir
-/data/forum_service/songpei/sync/v410_source/cviruntime/build_sdk/build_cvimodel/CMakeFiles/cvibuilder.dir

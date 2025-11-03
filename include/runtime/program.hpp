@@ -37,7 +37,7 @@ public:
 
   void setOptions(bool export_all_tensors,
                   bool skip_preprocess);
-  CVI_RC load(const cvi::model::Program *fb_program);
+  CVI_RC load(const cvi::model::Program *fb_program, bool io_mem_empty = false);
 
   bool forward(CVI_TENSOR *inputs, int input_num,
                CVI_TENSOR *outputs, int output_num);
@@ -69,7 +69,7 @@ public:
 
 private:
   CVI_RC createNeuronSpace(const cvi::model::Program *fb_program);
-  CVI_RC createNeuronMap(const cvi::model::Program *fb_program);
+  CVI_RC createNeuronMap(const cvi::model::Program *fb_program, bool io_mem_empty = false);
   CVI_RC createRoutines(const cvi::model::Program *fb_program);
   bool run();
 

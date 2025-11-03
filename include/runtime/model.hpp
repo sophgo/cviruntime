@@ -45,6 +45,7 @@ public:
   int32_t program_num;
   int32_t major_ver = 1;
   int32_t minor_ver = 2;
+  bool io_mem_empty = false;
 
   // global info
   static std::string targetChipType;
@@ -75,7 +76,7 @@ private:
   tensor_map_t weight_map;
   dmabuf_map_t dmabuf_map;
   bool encrypt_model;
-  bool isprotect = false; //protect cmdbuf_mem and weight_mem 
+  bool isprotect = false; //protect cmdbuf_mem and weight_mem
   int _count;
   std::string _model_name;
   size_t _max_shared_mem_size;

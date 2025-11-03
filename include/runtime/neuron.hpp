@@ -89,7 +89,7 @@ public:
   void store(CVI_TENSOR &tensor);
   void toCpu();
   void toTpu();
-  CVI_RC reserveIonMem(int64_t offset);
+  CVI_RC reserveIonMem(int64_t offset, bool io_mem_empty = false);
   CVI_RC reserveSysMem();
   void updateBaseAddr(uint64_t paddr);
   bool isPacked();

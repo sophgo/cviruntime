@@ -457,7 +457,7 @@ CVI_RC CviModel::loadProgram(Program **program,
     return CVI_RC_FAILURE;
   }
   ptr->setOptions(export_all_tensors, skip_preprocess);
-  ret = ptr->load(fb_program);
+  ret = ptr->load(fb_program, io_mem_empty);
   if (ret != CVI_RC_SUCCESS) {
     TPU_LOG_ERROR("program load failed:%d\n", ret);
     delete ptr;

@@ -212,6 +212,9 @@ CVI_RC CVI_NN_SetConfig(CVI_MODEL_HANDLE model, CVI_CONFIG_OPTION option, ...) {
       instance->program_id = va_arg(valist, int32_t);
       assert(instance->program_id < instance->program_num);
       break;
+    case OPTION_IOMEM_EMPTY:
+      instance->model->io_mem_empty = true;
+      break;
     case OPTION_SKIP_PREPROCESS:
     case OPTION_SKIP_POSTPROCESS:
     case OPTION_INPUT_MEM_TYPE:

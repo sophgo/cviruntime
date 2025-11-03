@@ -67,6 +67,11 @@ typedef enum {
    * set program id, for switch programs in cvimodel
    */
   OPTION_PROGRAM_INDEX            = 9,
+  /*
+   * bool, default value is false,
+   * if set to true, runtime will not alloc io mem
+   */
+  OPTION_IOMEM_EMPTY              = 10,
   // DEPRECATED
   OPTION_BATCH_SIZE               = 1,
   // DEPRECATED

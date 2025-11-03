@@ -102,13 +102,13 @@ CVI_RC Program::createNeuronSpace(const cvi::model::Program *fb_program) {
   return CVI_RC_SUCCESS;
 }
 
-CVI_RC Program::createNeuronMap(const cvi::model::Program *fb_program) {
+CVI_RC Program::createNeuronMap(const cvi::model::Program *fb_program, bool io_mem_empty) {
   auto &tensor_vector = *fb_program->tensor_map();
   std::string in_name = fb_program->input_tensors()->begin()->str();
   for (auto t : tensor_vector) {
     auto tensor = std::make_shared<Neuron>(_ctx, _cvk, t,
                                            baseAddrArray, baseMemArray, _model_name.c_str());
-    if (tensor->reserveIonMem(t->offset()) != CVI_RC_SUCCESS) {
+    if (tensor->reserveIonMem(t->offset(), io_mem_empty) != CVI_RC_SUCCESS) {
       return CVI_RC_NOMEM;
     }
     neuron_map[t->name()->str()] = tensor;
@@ -147,7 +147,7 @@ CVI_RC Program::createRoutines(const cvi::model::Program *fb_program) {
   return CVI_RC_SUCCESS;
 }
 
-CVI_RC Program::load(const cvi::model::Program *fb_program) {
+CVI_RC Program::load(const cvi::model::Program *fb_program, bool io_mem_empty) {
   CVI_RC ret;
 
   ret = this->createNeuronSpace(fb_program);
@@ -155,7 +155,7 @@ CVI_RC Program::load(const cvi::model::Program *fb_program) {
     return ret;
   }
 
-  ret = this->createNeuronMap(fb_program);
+  ret = this->createNeuronMap(fb_program, io_mem_empty);
   if (ret != CVI_RC_SUCCESS) {
     return ret;
   }

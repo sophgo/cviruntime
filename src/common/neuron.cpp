@@ -483,7 +483,7 @@ void Neuron::toTpu() {
   }
 }
 
-CVI_RC Neuron::reserveIonMem(int64_t offset) {
+CVI_RC Neuron::reserveIonMem(int64_t offset, bool io_mem_empty) {
   if (offset == -1) {
     return CVI_RC_SUCCESS;
   }
@@ -494,7 +494,13 @@ CVI_RC Neuron::reserveIonMem(int64_t offset) {
   if (_baseAddrIndex < 3) { // shared mem
     _gmem = CVI_RT_MemPreAlloc(_baseMemArray[_baseAddrIndex], shift, _size);
   } else {
-    if (!_baseMemArray[_baseAddrIndex]) {
+    if (io_mem_empty) {
+      _gmem = nullptr;
+      _vaddr = nullptr;
+      _paddr = 0;
+      _base_mem = nullptr;
+      return CVI_RC_SUCCESS;
+    } else if (!_baseMemArray[_baseAddrIndex]) {
       assert(shift == 0);
       _gmem = cviMemAlloc(_ctx, _size, CVI_ALLOC_NEURON, _module_name.c_str());
       if (!_gmem) {
