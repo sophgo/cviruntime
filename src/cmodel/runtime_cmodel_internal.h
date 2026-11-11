@@ -151,6 +151,21 @@ bmerr_t rt_cv180x_run_cmdbuf_ex2(bmctx_t ctx, bmmem_device_t cmdbuf_mem,
 void rt_cv180x_device_free(bmctx_t ctx, bmmem_device_t mem);
 bmmem_device_t rt_cv180x_device_alloc_raw(bmctx_t ctx, size_t size);
 
+bmerr_t rt_phobos3_device_open(int index, bmdev_t *dev);
+bmerr_t rt_phobos3_send_cmdbuf(bmctx_t ctx, uint8_t *cmdbuf, size_t sz, uint16_t *seq_no);
+bmerr_t rt_phobos3_wait_cmdbuf_done(bmctx_t ctx, uint16_t seq_no);
+bmerr_t rt_phobos3_load_cmdbuf(bmctx_t ctx, uint8_t *cmdbuf, size_t sz,
+                       unsigned long long neuron_gaddr, unsigned long long weight_gaddr,
+                       bool enable_pmu, bmmem_device_t *cmdbuf_mem);
+bmerr_t rt_phobos3_run_cmdbuf(bmctx_t ctx, bmmem_device_t cmdbuf_mem,
+                      uint16_t *seq_no);
+bmerr_t rt_phobos3_run_cmdbuf_ex(bmctx_t ctx, bmmem_device_t cmdbuf_mem,
+                      uint16_t *seq_no, uint64_t input_base_addr, uint64_t output_base_addr);
+bmerr_t rt_phobos3_run_cmdbuf_ex2(bmctx_t ctx, bmmem_device_t cmdbuf_mem,
+                      uint16_t *seq_no, cvi_array_base *p_array_base);
+
+void rt_phobos3_device_free(bmctx_t ctx, bmmem_device_t mem);
+bmmem_device_t rt_phobos3_device_alloc_raw(bmctx_t ctx, size_t size);
 #ifdef __cplusplus
 }
 #endif

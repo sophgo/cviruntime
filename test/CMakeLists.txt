@@ -135,3 +135,33 @@ if(CHIP STREQUAL "cv180x" OR RUNTIME STREQUAL "CMODEL")
     add_test(${TEST_NAME} ${TEST_NAME} ctest_test)
   endforeach()
 endif()
+
+if(CHIP STREQUAL "phobos3" OR RUNTIME STREQUAL "CMODEL")
+  # SOC BM1810 or CMODEL all in one
+  file(GLOB_RECURSE TEST_PHOBOS3_CASES phobos3/*.cpp)
+  foreach(TEST_SRC ${TEST_PHOBOS3_CASES})
+    get_filename_component(TEST_NAME ${TEST_SRC} NAME_WE)
+
+    add_executable(${TEST_NAME} ${TEST_SRC})
+    target_link_libraries(${TEST_NAME} ${CVI_LIBS} ${EXTRA_LIBS} cviruntime_test)
+    set_target_properties(${TEST_NAME} PROPERTIES COMPILE_FLAGS "-Werror -Wall -Wextra")
+    install(TARGETS ${TEST_NAME} DESTINATION bin)
+
+    add_test(${TEST_NAME} ${TEST_NAME} ctest_test)
+  endforeach()
+
+  # C version test
+  file(GLOB TEST_PHOBOS3_NEW_CASES phobos3/test_*.c)
+
+  foreach(TEST_SRC ${TEST_PHOBOS3_NEW_CASES})
+    get_filename_component(TEST_NAME ${TEST_SRC} NAME_WE)
+
+    add_executable(${TEST_NAME} ${TEST_SRC})
+    target_link_libraries(${TEST_NAME} ${CVI_LIBS} ${EXTRA_LIBS}
+                          cviruntime_test m)
+    set_target_properties(${TEST_NAME} PROPERTIES COMPILE_FLAGS "-Werror -Wall -Wextra")
+    install(TARGETS ${TEST_NAME} DESTINATION bin)
+
+    add_test(${TEST_NAME} ${TEST_NAME} ctest_test)
+  endforeach()
+endif()

@@ -37,6 +37,7 @@
 #include <cpu_function/grid_sampler.hpp>
 #include <cpu_function/cumsum.hpp>
 #include <cpu_function/gatherelements_pt.hpp>
+#include <cpu_function/topk.hpp>
 #endif
 
 #ifdef ENABLE_COMPRESS_CMDBUF
@@ -89,6 +90,7 @@ CviModel::CviModel(CVI_RT_HANDLE ctx, int count)
   _cpu_functions.push_back(new CpuRuntimeFunction("grid_sampler", GridSamplerFunc::open));
   _cpu_functions.push_back(new CpuRuntimeFunction("cumsum", CumSumFunc::open));
   _cpu_functions.push_back(new CpuRuntimeFunction("gatherelements_pt", GatherElementsPtFunc::open));
+  _cpu_functions.push_back(new CpuRuntimeFunction("topk", TopKFunc::open));
 #endif
 }
 
@@ -126,11 +128,19 @@ bool CviModel::checkIfMatchTargetChipType(std::string &target) {
   char *deviceChipType = (char *)"cv181x";
 #elif CHIPID == 0x4
   char *deviceChipType = (char *)"cv180x";
+#elif CHIPID == 0x5
+  char *deviceChipType = (char *)"cv190x";
 #else
 #error "CHIPID is not defined"
 #endif
 #endif
-  if (target != deviceChipType) {
+  if (target != deviceChipType
+#if CHIPID == 0x5
+      /* phobos3 was the internal codename of cv190x; models built by
+       * older toolchains are stamped with it and remain compatible */
+      && target != "phobos3"
+#endif
+  ) {
     TPU_LOG_ERROR("cvimodel built for %s CANNOT run on platform %s\n",
                   target.c_str(), deviceChipType);
     return false;
@@ -357,7 +367,7 @@ CVI_RC CviModel::loadCmdbuf(BaseStream *stream, size_t offset, size_t size, cons
     }
   }
   if (ret == CVI_RC_SUCCESS) {
-    dmabuf_map.emplace(section->name()->str(), cmdbuf_mem);
+    dmabuf_map[section->name()->str()] = cmdbuf_mem;
   } else {
     TPU_LOG_WARNING("loadCmdbuf failed\n");
   }
@@ -457,7 +467,7 @@ CVI_RC CviModel::loadProgram(Program **program,
     return CVI_RC_FAILURE;
   }
   ptr->setOptions(export_all_tensors, skip_preprocess);
-  ret = ptr->load(fb_program);
+  ret = ptr->load(fb_program, io_mem_empty);
   if (ret != CVI_RC_SUCCESS) {
     TPU_LOG_ERROR("program load failed:%d\n", ret);
     delete ptr;

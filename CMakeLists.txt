@@ -2,13 +2,18 @@ cmake_minimum_required(VERSION 3.1.0)
 
 project(cviruntime C CXX)
 
-execute_process(
-  COMMAND git describe --always --tags --dirty
-  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-  RESULT_VARIABLE GIT_EXEC_RESULT
-  OUTPUT_VARIABLE GIT_SHORT_HASH)
+# Fall back to "unknown" when the source tree is exported without .git
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/.git")
+  execute_process(
+    COMMAND git describe --always --tags --dirty
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    RESULT_VARIABLE GIT_EXEC_RESULT
+    OUTPUT_VARIABLE GIT_SHORT_HASH)
 
-string(STRIP ${GIT_SHORT_HASH} GIT_SHORT_HASH)
+  string(STRIP ${GIT_SHORT_HASH} GIT_SHORT_HASH)
+else()
+  set(GIT_SHORT_HASH "unknown")
+endif()
 string(TIMESTAMP BUILD_TIME "%Y%m%d")
 set(RUNTIME_VERSION "${GIT_SHORT_HASH}@${BUILD_TIME}")
 message(STATUS "runtime version: ${RUNTIME_VERSION}")
@@ -75,6 +80,10 @@ elseif (CHIP STREQUAL cv181x)
   set(ENABLE_COMPRESS_CMDBUF OFF CACHE BOOL "" FORCE)
 elseif (CHIP STREQUAL cv180x)
   add_definitions(-DCHIPID=0x4)
+  set(ENABLE_COMPRESS_CMDBUF OFF CACHE BOOL "" FORCE)
+#   set(ENABLE_CPU_FUNC OFF CACHE BOOL "" FORCE)
+elseif (CHIP STREQUAL phobos3 OR CHIP STREQUAL cv190x)
+  add_definitions(-DCHIPID=0x5)
   set(ENABLE_COMPRESS_CMDBUF OFF CACHE BOOL "" FORCE)
   set(ENABLE_CPU_FUNC OFF CACHE BOOL "" FORCE)
 endif()
@@ -191,6 +200,16 @@ elseif (CHIP STREQUAL cv180x)
       PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
       DESTINATION . RENAME regression_models_e2e.sh)
   install(FILES scripts/regression_samples_cv180x.sh
+      PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
+      DESTINATION . RENAME regression_samples.sh)
+elseif (CHIP STREQUAL phobos3)
+  install(FILES scripts/regression_new_models_phobos3.sh
+      PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
+      DESTINATION . RENAME regression_models.sh)
+  install(FILES scripts/regression_models_e2e_phobos3.sh
+      PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
+      DESTINATION . RENAME regression_models_e2e.sh)
+  install(FILES scripts/regression_samples_phobos3.sh
       PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_READ WORLD_READ
       DESTINATION . RENAME regression_samples.sh)
 endif()

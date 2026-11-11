@@ -9,11 +9,13 @@
 #include <cvikernel/cvikernel.h>
 #include <cvikernel/cv181x/cv181x_tpu_cfg.h>
 #include <cvikernel/cv180x/cv180x_tpu_cfg.h>
+#include <cvikernel/phobos3/phobos3_tpu_cfg.h>
 
 #include "cviruntime_context.h"
 #include "cvitpu_debug.h"
 #include "runtime_cmodel_internal.h"
 #include <bmruntime_bmkernel.h>
+#include "cmodel_cmdbuf_phobos3.h"
 #include "cmodel_cmdbuf_180x.h"
 #include "cmodel_cmdbuf_181x.h"
 #include "cmodel_cmdbuf_182x.h"
@@ -38,6 +40,7 @@ static std::unique_ptr<CModelCmdbuf> g_cmodel_cmdbuf_183x(new CModelCmdbuf183x()
 static std::unique_ptr<CModelCmdbuf> g_cmodel_cmdbuf_182x(new CModelCmdbuf182x());
 static std::unique_ptr<CModelCmdbuf> g_cmodel_cmdbuf_181x(new CModelCmdbuf181x());
 static std::unique_ptr<CModelCmdbuf> g_cmodel_cmdbuf_180x(new CModelCmdbuf180x());
+static std::unique_ptr<CModelCmdbuf> g_cmodel_cmdbuf_phobos3(new CModelCmdbufphobos3());
 
 static inline CModelCmdbuf *getCmdbufPtr(const char *chip_ver) {
   if (!strcmp(chip_ver, CVI_TPU_VERSION_183X)) {
@@ -48,6 +51,10 @@ static inline CModelCmdbuf *getCmdbufPtr(const char *chip_ver) {
     return g_cmodel_cmdbuf_181x.get();
   } else if (!strcmp(chip_ver, CVI_TPU_VERSION_180X)) {
     return g_cmodel_cmdbuf_180x.get();
+  } else if (!strcmp(chip_ver, CVI_TPU_VERSION_PHOBOS3) ||
+             !strcmp(chip_ver, "cv190x")) {
+    /* cv190x is the official name of phobos3 */
+    return g_cmodel_cmdbuf_phobos3.get();
   } else {
     assert(0);
   }
@@ -62,6 +69,8 @@ static inline CModelCmdbuf *getCmdbufPtr(uint32_t chip_ver) {
     return g_cmodel_cmdbuf_181x.get();
   } else if (chip_ver == CV180X_VER) {
     return g_cmodel_cmdbuf_180x.get();
+  } else if (chip_ver == PHOBOS3_VER) {
+    return g_cmodel_cmdbuf_phobos3.get();
   } else {
     assert(0);
   }
@@ -72,8 +81,8 @@ bmerr_t bm_device_open(int index, bmdev_t *dev) {
   if (!g_run_chip) {
     g_run_chip = getenv("SET_CHIP_NAME");
     if (!g_run_chip) {
-      TPU_LOG_WARNING("Please export SET_CHIP_NAME=%s/%s/%s/%s\n",
-                      CVI_TPU_VERSION_183X, CVI_TPU_VERSION_182X, CVI_TPU_VERSION_181X, CVI_TPU_VERSION_180X);
+      TPU_LOG_WARNING("Please export SET_CHIP_NAME=%s/%s/%s/%s/%s/cv190x\n",
+                      CVI_TPU_VERSION_183X, CVI_TPU_VERSION_182X, CVI_TPU_VERSION_181X, CVI_TPU_VERSION_180X, CVI_TPU_VERSION_PHOBOS3);
       return BM_ERR_FAILURE;
     }
     TPU_LOG_INFO("Start TPU Simulator for %s\n", g_run_chip);
@@ -537,6 +546,10 @@ CVI_RT_KHANDLE CVI_RT_RegisterKernel(CVI_RT_HANDLE rt_handle,
     strncpy(req_info.chip_ver_str, "cv181x", sizeof(req_info.chip_ver_str) - 1);
   } else if (!strcmp(g_run_chip, CVI_TPU_VERSION_180X)) {
     strncpy(req_info.chip_ver_str, "cv180x", sizeof(req_info.chip_ver_str) - 1);
+  } else if (!strcmp(g_run_chip, CVI_TPU_VERSION_PHOBOS3) ||
+             !strcmp(g_run_chip, "cv190x")) {
+    /* cv190x is the official name of phobos3 */
+    strncpy(req_info.chip_ver_str, "phobos3", sizeof(req_info.chip_ver_str) - 1);
   } else {
     assert(0);
     return NULL;

@@ -154,6 +154,14 @@ cp $TOOLCHAIN_UCLIBC $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_RISCV64 $TPU_SDK_INSTALL_PATH/cmake
 cp $TOOLCHAIN_RISCV64_MUSL $TPU_SDK_INSTALL_PATH/cmake
 
+# cv190x(phobos3) cpu has no rvv support; strip vector ext from the shipped
+# riscv toolchain files so downstream builds cannot emit vector instructions
+if [ "$CHIP_ID" == "cv190x" ]; then
+  sed -i 's/c906fdv/c906fd/g; s/rv64gcv0p7_zfh_xthead/rv64gc_zfh_xthead/g' \
+    $TPU_SDK_INSTALL_PATH/cmake/toolchain-riscv64-linux-x86_64.cmake \
+    $TPU_SDK_INSTALL_PATH/cmake/toolchain-riscv64-linux-musl-x86_64.cmake
+fi
+
 # copy lib
 mkdir -p "$SYSTEM_OUT_DIR"/lib/
 cp -a "$TPU_SDK_INSTALL_PATH"/lib/*.so* "$SYSTEM_OUT_DIR"/lib/
